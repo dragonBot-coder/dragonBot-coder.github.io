@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cookie Clicker</title>
+        <style>
+            body {
+                color: rgb(255, 188, 20);
+                background-color: rgb(255, 0, 0);
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+            h1 {
+                font-size: 25px;
+                margin-top: 20px;
+            }
+            h2 {
+                font-size: 17.5px;
+                color: rgb(255, 255, 0);
+            }
+            h3 {
+                font-size: 20px;
+                color: rgb(255, 255, 0);
+            }
+            .center-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+            }
+            img {
+                width: 150px;
+                cursor: pointer;
+            }
+            .cookie-counter {
+                font-size: 24px;
+                margin-top: 20px;
+                color: white;
+            }
+            #cookieButton {
+                background-color: rgb(255, 188, 20);
+                border: none;
+                padding: 20px;
+                font-size: 20px;
+                cursor: pointer;
+                border-radius: 10px;
+                margin-top: 20px;
+                color: white;
+            }
+            #cookieButton:hover {
+                background-color: rgb(255, 0, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cookie Clicker</h1>
+        
+        <div class="center-image">
+            <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/avatars/robot_male_3.png" alt="ROBOT" width="150" id="cookieImage">
+        </div>
+
+        <div class="cookie-counter">
+            <p>You have <span id="cookieCount">0</span> cookies!</p>
+        </div>
+
+        <button id="cookieButton">Click me to get a cookie!</button>
+
+        <h2>About this Game</h2>
+        <p>Click the robot to earn cookies! Each click will increase your cookie count.</p>
+
+        <script>
+            let cookieCount = 0; // Initialize cookie count
+
+            // Get references to elements
+            const cookieImage = document.getElementById('cookieImage');
+            const cookieCountDisplay = document.getElementById('cookieCount');
+            const cookieButton = document.getElementById('cookieButton');
+
+            // Function to increase cookie count
+            function increaseCookies() {
+                cookieCount += 1; // Add one cookie per click
+                cookieCountDisplay.textContent = cookieCount; // Update cookie count on the page
+            }
+
+            // Event listener for cookie click
+            cookieImage.addEventListener('click', increaseCookies);
+            cookieButton.addEventListener('click', increaseCookies); // Also allow button click to earn cookies
+        </script>
+    </body>
+</html>
