@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIF Homework Presentation</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function myfunction() {
+            var currentdate = new Date();
+            alert("Today is " + currentdate);
+        }
+    </script>
+    <style>
+        .background-svg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        body {
+            font: serif;
+            color: #e0e0e0;
+            background: #121212;
+            line-height: 1.6;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Corrected SVG namespace -->
+    <svg class="background-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 600">
+        <defs>
+            <pattern id="rectPattern" patternUnits="userSpaceOnUse" width="1" height="1">
+                <rect x="0" y="0" width="10000" height="10000" fill="#FFFFFFFF" />
+                <rect x="50" y="50" width="10000" height="10000" fill="#FFFFFFFF" />
+            </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#rectPattern)" />
+    </svg>
+
+    <div class="container">
+        <div class="content">
+            <audio controls style="width: 120px; height: 10px;">
+                <source src="LP.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div class="center">
+                <div class="header-container">
+                    <h2 onclick="myfunction()">Francais pour HMC</h2>
+                </div>
+                <p>Par Ruilin (Tony) Li</p>
+            </div>
+
+            <b>Les Resources de Francais pour la Lecture:</b>
+            <br><br>
+            <a href="https://www.bibliothequedesameriques.com/selections/selection-thematique/sport-et-defis">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bibliotheque des Ameriques: Les Sports et Defis</p>
+            </a>
+            <br>
+            <a href="https://www.bibliothequedesameriques.com/selections/selection-thematique/journee-internationale-du-livre-pour-enfant">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bibliotheque des Ameriques: Les Journee Internationale</p>
+            </a>
+            <br>
+            <a href="https://www.bibliothequedesameriques.com/selections/selection-thematique/vive-les-vacances">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bibliotheque des Ameriques: Les Vacances</p>
+            </a>
+            <br>
+            <a href="https://bonjourbooksdc.com/collections/french-immersion-grades-6-8">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bonjour Books: FI Grades 6 - 8</p>
+            </a>
+            <br>
+            <a href="https://bonjourbooksdc.com/collections/graphic-novels-for-ages-9-12">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bonjour Books: Graphic Novels 9 - 12</p>
+            </a>
+            <br>
+            <a href="https://bonjourbooksdc.com/collections/graphic-novels-recommended-for-teens">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bonjour Books: Graphic Novels Teens</p>
+            </a>
+            <br>
+            <a href="https://bonjourbooksdc.com/collections/popular-series-series-populaires">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bonjour Books: Popular Series</p>
+            </a>
+            <br>
+
+            <b>Les Resources de Francais pour la Grammaire:</b>
+            <br><br>
+            <a href="https://conjuguemos.com/activities/french/grammar/1">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Activites de Conjugemos</p>
+            </a>
+            <br>
+            <a href="https://www.laits.utexas.edu/tex/gr/index.html">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; University of Texas Exercises</p>
+            </a>
+            <br>
+            <a href="https://www.fel.gouv.qc.ca/bnqex/">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Government of Quebec Exercises</p>
+            </a>
+            <br>
+            <a href="https://apprendre.tv5monde.com/en/collection-all">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TV5 Monde Exercises</p>
+            </a>
+            <br>
+
+            <b>Les Resources de Francais pour l'Écoute:</b>
+            <br><br>
+            <a href="https://ici.radio-canada.ca/ohdio/categories/1003592/jeunesse">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio Canada Ohdio</p>
+            </a>
+            <br>
+            <a href="https://www.hoopladigital.com/my/hoopla">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Entend Hoopla</p>
+            </a>
+            <br>
+            <a href="https://libbyapp.com/shelf">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Entend Libby</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
