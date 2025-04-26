@@ -36,7 +36,7 @@
 }
 
 body {
-    font: serif;
+    font-family: "Times New Roman", serif;
     color: #e0e0e0;
     background-color: #121212;
     line-height: 2;
