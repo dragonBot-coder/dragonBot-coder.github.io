@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/x-icon" href="Website Icon.jpeg">
-    <title>French Resources for Hazel McCallion Senior PS</title>
+    <link rel="shortcut icon" type="x-icon" href="Website Icon.jpeg">
+    <title>Les Ressources Francais pour Hazel McCallion Senior PS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="script.js" defer></script>
     <link href="styles.css" rel="stylesheet">
-
-    <script>
-        function myfunction() {
-            var currentdate = new Date();
-            alert("Today is " + currentdate.toLocaleDateString());
+    
+    <!-- Google Translate -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'fr',
+                includedLanguages: 'en,fr,es,zh-CN,ar',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
         }
     </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <style>
         .background-svg {
@@ -26,21 +31,38 @@
             z-index: -1;
         }
         body {
-            font-family: serif;
+            font: serif;
             color: #e0e0e0;
             background: #121212;
             line-height: 1.6;
             padding: 20px;
         }
+        .goog-te-banner-frame.skiptranslate,
+        .goog-te-gadget-icon {
+            display: none !important;
+        }
+        body {
+            top: 0px !important;
+        }
     </style>
+    
+    <script>
+        function myfunction() {
+            var currentdate = new Date();
+            alert("Today is " + currentdate);
+        }
+    </script>
 </head>
 
 <body>
+    <!-- Google Translate Widget -->
+    <div id="google_translate_element" style="float: right; margin-bottom: 10px;"></div>
+
     <ul class="tabs">
-        <li data-tab-target="#home" class="active tab">Home</li>
-        <li data-tab-target="#about" class="tab">About</li>
-        <li data-tab-target="#reading" class="tab">Reading</li>
-        <li data-tab-target="#grammar" class="tab">Grammar</li>
+        <li data-tab-target="#home" class="active tab">Page d'Accueil</li>
+        <li data-tab-target="#about" class="tab">À Propos</li>
+        <li data-tab-target="#reading" class="tab">Lecture</li>
+        <li data-tab-target="#grammar" class="tab">Grammaire</li>
         <li data-tab-target="#listen" class="tab">Audio</li>
     </ul>
 
@@ -65,36 +87,35 @@
                 <div id="home" data-tab-content class="active">
                     <div class="center">
                         <div class="header-container">
-                            <h2 onclick="myfunction()">French Resources</h2>
+                            <h2 onclick="myfunction()">Les Ressources Francais</h2>
                         </div>
-                        <p>By Ruilin Li</p>
+                        <p>Par Ruilin Li</p>
                     </div>
                 </div>
 
                 <div id="about" data-tab-content>
-                    <h1>About</h1>
-                    <p>This site provides curated French language learning resources for Hazel McCallion Senior PS students.</p>
+                    <h1>À Propos</h1>
                 </div>
 
                 <div id="reading" data-tab-content>
-                    <b>French Reading Resources:</b><br><br>
+                    <b>Les Ressources de Francais pour la Lecture:</b><br><br>
                     <a href="https://www.bibliothequedesameriques.com/selections/selection-thematique/sport-et-defis">
-                        <p>Bibliothèque des Amériques: Sports and Challenges</p>
+                        <p>Bibliotheque des Ameriques: Les Sports et Defis</p>
                     </a>
                     <a href="https://www.bibliothequedesameriques.com/selections/selection-thematique/journee-internationale-du-livre-pour-enfant">
-                        <p>Bibliothèque des Amériques: International Children's Book Day</p>
+                        <p>Bibliotheque des Ameriques: Les Journee Internationale</p>
                     </a>
                     <a href="https://www.bibliothequedesameriques.com/selections/selection-thematique/vive-les-vacances">
-                        <p>Bibliothèque des Amériques: Vacation Reading</p>
+                        <p>Bibliotheque des Ameriques: Les Vacances</p>
                     </a>
                     <a href="https://bonjourbooksdc.com/collections/french-immersion-grades-6-8">
-                        <p>Bonjour Books: French Immersion Grades 6–8</p>
+                        <p>Bonjour Books: FI Grades 6 - 8</p>
                     </a>
                     <a href="https://bonjourbooksdc.com/collections/graphic-novels-for-ages-9-12">
-                        <p>Bonjour Books: Graphic Novels Ages 9–12</p>
+                        <p>Bonjour Books: Graphic Novels 9 - 12</p>
                     </a>
                     <a href="https://bonjourbooksdc.com/collections/graphic-novels-recommended-for-teens">
-                        <p>Bonjour Books: Teen Graphic Novels</p>
+                        <p>Bonjour Books: Graphic Novels Teens</p>
                     </a>
                     <a href="https://bonjourbooksdc.com/collections/popular-series-series-populaires">
                         <p>Bonjour Books: Popular Series</p>
@@ -102,9 +123,9 @@
                 </div>
 
                 <div id="grammar" data-tab-content>
-                    <b>French Grammar Resources:</b><br><br>
+                    <b>Les Ressources de Francais pour la Grammaire:</b><br><br>
                     <a href="https://conjuguemos.com/activities/french/grammar/1">
-                        <p>Conjuguemos Grammar Activities</p>
+                        <p>Activites de Conjugemos</p>
                     </a>
                     <a href="https://www.laits.utexas.edu/tex/gr/index.html">
                         <p>University of Texas Exercises</p>
@@ -113,20 +134,20 @@
                         <p>Government of Quebec Exercises</p>
                     </a>
                     <a href="https://apprendre.tv5monde.com/en/collection-all">
-                        <p>TV5Monde Practice</p>
+                        <p>TV5 Monde Exercises</p>
                     </a>
                 </div>
 
                 <div id="listen" data-tab-content>
-                    <b>French Listening Resources:</b><br><br>
+                    <b>Les Ressources de Francais pour l'Écoute:</b><br><br>
                     <a href="https://ici.radio-canada.ca/ohdio/categories/1003592/jeunesse">
-                        <p>Radio-Canada Ohdio</p>
+                        <p>Radio Canada Ohdio</p>
                     </a>
                     <a href="https://www.hoopladigital.com/my/hoopla">
-                        <p>Listen on Hoopla</p>
+                        <p>Entend Hoopla</p>
                     </a>
                     <a href="https://libbyapp.com/shelf">
-                        <p>Listen on Libby</p>
+                        <p>Entend Libby</p>
                     </a>
                 </div>
             </div>
