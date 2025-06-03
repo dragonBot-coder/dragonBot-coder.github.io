@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="x-icon" href="Website Icon.jpeg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Ressources Francais pour Hazel McCallion Senior PS</title>
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
     <script>
         function myfunction() {
             var currentdate = new Date();
@@ -31,6 +33,12 @@
     </style>
 </head>
 <body>
+      <ul class="tabs">
+          <li data-tab-target="#home" class="active tab">Page d'Accueil</li>
+          <li data-tab-target="#pricing" class="tab">Lecture</li>
+          <li data-tab-target="#about" class="tab">Grammaire</li>
+          <li data-tab-target="#cost" class="tab">Audio</li>
+      </ul>
     <svg class="background-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 600">
         <defs>
             <pattern id="rectPattern" patternUnits="userSpaceOnUse" width="1" height="1">
