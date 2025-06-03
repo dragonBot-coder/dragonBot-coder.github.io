@@ -35,9 +35,10 @@
 <body>
       <ul class="tabs">
           <li data-tab-target="#home" class="active tab">Page d'Accueil</li>
-          <li data-tab-target="#pricing" class="tab">Lecture</li>
-          <li data-tab-target="#about" class="tab">Grammaire</li>
-          <li data-tab-target="#cost" class="tab">Audio</li>
+          <li data-tab-target="#about" class="tab">À Propos</li>
+          <li data-tab-target="#reading" class="tab">Lecture</li>
+          <li data-tab-target="#grammar" class="tab">Grammaire</li>
+          <li data-tab-target="#listen" class="tab">Audio</li>
       </ul>
     <svg class="background-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 600">
         <defs>
@@ -58,25 +59,17 @@
 
     <div class="tab-content">
     <div id="home" data-tab-content class="active">
-      <h1>Home</h1>
-      <p>This is the home</p>
-    </div>
-    <div id="pricing" data-tab-content>
-      <h1>Pricing</h1>
-      <p>Some information on pricing</p>
-    </div>
-    <div id="about" data-tab-content>
-      <h1>About</h1>
-      <p>Let me tell you about me</p>
-    <div id="tent" data-tab-content>
-      <h1>About</h1>
-      <p>Let me tell you about me</p>
             <div class="center">
                 <div class="header-container">
                     <h2 onclick="myfunction()">Les Ressources Francais</h2>
                 </div>
                 <p>Par Ruilin Li<p>
             </div>
+    </div>
+        <div id="about" data-tab-content>
+          <h1>À Propos</h1>
+        </div>
+        <div id="reading" data-tab-content>
 
             <b>Les Ressources de Francais pour la Lecture:</b>
             <br><br>
@@ -108,7 +101,8 @@
                 <p> Bonjour Books: Popular Series</p>
             </a>
             <br>
-
+        </div>
+        <div id="grammar" data-tab-content>
             <b>Les Ressources de Francais pour la Grammaire:</b>
             <br><br>
             <a href="https://conjuguemos.com/activities/french/grammar/1">
@@ -128,7 +122,9 @@
             </a>
             <br>
 
-            <b>Les Ressources de Francais pour l'Écoute:</b>
+        </div>
+        <div id="listen" data-tab-content>
+                      <b>Les Ressources de Francais pour l'Écoute:</b>
             <br><br>
             <a href="https://ici.radio-canada.ca/ohdio/categories/1003592/jeunesse">
                 <p>Radio Canada Ohdio</p>
@@ -141,6 +137,13 @@
             <a href="https://libbyapp.com/shelf">
                 <p> Entend Libby</p>
             </a>
+          </div>
+    </div>
+
+
+
+
+
         </div>
     </div>
 
