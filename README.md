@@ -1,1 +1,1 @@
-This is my ISELP Project for HTML Coding. Year 2024 - 2025.
+This is my French Webstie Project for HTML Coding. Year 2024 - 2025.
